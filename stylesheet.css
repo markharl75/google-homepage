@@ -5,11 +5,57 @@
     background-color: white;
 }
 
+/* Header Links */
+
 .header-links-container{
+
     font-family:arial, sans-serif;
-    font-size:12px;
+    font-size:.8rem;
+
+    height:1em;
 
     display:grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
+    justify-content: center;
+    align-content:center;
     
+}
+
+.header-links-left{
+    margin-top:2rem;
+    margin-left:1.5rem;
+    grid-template-columns: repeat(2, 3.3rem);
+    float:left;
+}
+
+.header-links-left>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-links-right{
+    margin-top:2rem;
+    margin-right:2rem;
+    grid-template-columns: repeat(4, 3.3rem);
+    float:right;
+    width:12rem;
+
+    position:relative;
+}
+
+.header-links-right>*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default tag overrides */
+
+a{
+    color:rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
