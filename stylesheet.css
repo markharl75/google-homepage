@@ -31,9 +31,8 @@
 }
 
 .header-links-left>*{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:table;
+    margin:auto;
 }
 
 .header-links-right{
@@ -44,9 +43,8 @@
 }
 
 .header-links-right>*{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display:table;
+    margin:auto;
 }
 
 /* Default tag overrides */
@@ -104,8 +102,8 @@ a:hover{
 }
 
 #g-logo{
-    height:auto;
     max-width:15rem;
-    margin-left:auto;
-    margin-right:auto;
+    display: table;
+    margin:auto;
+    margin-top:8rem;
 }

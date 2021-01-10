@@ -10,6 +10,7 @@
         <div id="homepage">
 
             <!-- Header -->
+
             <div class="header-links-container header-links-left">
                 <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
                 <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
@@ -38,10 +39,13 @@
                 </a>
             </div>
 
+            <!-- "Clears" the float values in header-links-left and right; 
+                Essentially, adds height to the next div and prevents the next 
+                element from trying to be in the center of the 2 float items -->
+            <div style="clear: both;"></div>
 
             <!-- Logo -->
-            <!--<img id="g-logo" src="images/google-logo.png">-->
-
+                <img id="g-logo" src="images/google-logo.png">
 
         </div>
     </body>
