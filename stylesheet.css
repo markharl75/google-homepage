@@ -119,16 +119,16 @@ a:hover{
     
     border-style:solid;
     border-width:1px;
-    border-color: rgb(224, 224, 224);
+    border-color: rgb(223, 221, 221);
     border-radius:500px;
     
 }
 
 #search-bar:focus{
-    border-style:solid;
-    border-width:1px;
-    border-color: rgb(211, 211, 211);
-    border-radius:500px;
+    outline-style:none;
+    box-shadow: black;
+
+    box-shadow: 0 0 5px #dbdbdb;
     
 }
 
@@ -138,4 +138,14 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
     font-size:16px;
+
+    /* For maginifying glass image in search bar */
+    background-color: white;
+    background-image: url('/images/maginfying-glass.jpg');
+    background-position: 1rem .8rem;
+    background-repeat: no-repeat;
+    background-size:1.05rem;
+
+    padding-left: 2.95rem;
+    color:rgb(37, 37, 37);
   }
