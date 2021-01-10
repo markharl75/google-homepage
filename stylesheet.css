@@ -114,16 +114,28 @@ a:hover{
     margin:auto;
     margin-top:1.7rem;
 
-    height:2.6rem;
-    width:36rem; /* Hard coded for testing purposes, value may be useful later when adding responsiveness*/
+    height:2.85rem;
+    width:36.5rem; 
     
+    border-style:solid;
+    border-width:1px;
+    border-color: rgb(224, 224, 224);
+    border-radius:500px;
+    
+}
+
+#search-bar:focus{
     border-style:solid;
     border-width:1px;
     border-color: rgb(211, 211, 211);
     border-radius:500px;
+    
 }
 
-#search-bar:active{
-    border-style:solid;
-    border-width:1px;
-}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size:16px;
+  }
