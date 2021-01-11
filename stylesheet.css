@@ -126,10 +126,11 @@ a:hover{
 
 #search-bar:focus{
     outline-style:none;
-    box-shadow: black;
-
     box-shadow: 0 0 5px #dbdbdb;
-    
+}
+
+#search-bar:hover{
+    box-shadow: 0 0 5px #dbdbdb;
 }
 
 input[type=text] {
@@ -142,10 +143,56 @@ input[type=text] {
     /* For maginifying glass image in search bar */
     background-color: white;
     background-image: url('/images/maginfying-glass.jpg');
-    background-position: 1rem .8rem;
+    background-position: 1rem .85rem;
     background-repeat: no-repeat;
     background-size:1.05rem;
 
     padding-left: 2.95rem;
-    color:rgb(37, 37, 37);
+
+  }
+
+  .search-button-container{
+    padding-top:1.85rem;
+    display:table;
+    margin:auto;
+  }
+  
+  .search-buttons{
+    border-style:none;
+    padding: .62rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    border-radius:3px;
+    margin: 0 .35rem 0 .35rem;
+
+    font-size:.87rem;
+    color:rgb(73, 73, 73);
+    background-color:rgb(247, 247, 247);
+    cursor:pointer;
+  }
+
+  
+  .search-buttons:hover{
+    outline-style:none;
+    box-shadow: 0 0 3px #b1b1b1;
+  }
+
+  .search-buttons:focus{
+    outline-style:solid;
+    
+    box-shadow: 0 0 3px #b1b1b1;
+  }
+
+  #footer-container{
+      position:fixed;
+      bottom:0;
+
+      height:2.5rem;
+      width:100%;
+      
+      background-color: rgb(240, 239, 239);
+      
+      outline-style:solid;
+      outline-color:rgb(221, 219, 219);
+      outline-width: 1px;
   }
