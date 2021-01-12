@@ -37,10 +37,11 @@
 }
 
 .header-links-right{
-    margin-right:3rem;
+    margin-right:3.5rem;
     grid-template-columns: repeat(4, 3.3rem);
     float:right;
-    width:11rem;
+    width:12rem;
+
 }
 
 .header-links-right>*{
@@ -74,9 +75,10 @@ a:hover{
     background-color:#4383E9;
     color:white;
     
+    font-weight:800;
 
-    height:1.7rem;
-    width:3.3rem;
+    height:1.845rem;
+    width:4.3rem;
 
     border-style:none;
     border-radius:2px;
