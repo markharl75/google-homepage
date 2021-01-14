@@ -189,6 +189,8 @@ input[type=text] {
       position:fixed;
       bottom:0;
 
+      
+
       height:2.5rem;
       width:100%;
       
@@ -198,7 +200,38 @@ input[type=text] {
       outline-color:rgb(221, 219, 219);
       outline-width: 1px;
 
-      display:flex;
+      
+  }
+
+  .footer-links-left{
+      
+      display: block;
+      overflow: auto;
+
+
+      margin-left:1.2rem;
+      padding-top:.8rem;
+
+      height:100%;
+
+    
+      
+      font-family:arial, sans-serif;
+      font-size:.9rem;
+      
+      
+      
+  }
+
+  .footer-links-left>*{
+    color:#70757a;
+    font-size:.88rem;
+
+    height:100%;
+
+    margin:auto .7rem auto .7rem;
+    
+    
   }
 
   @media screen and (max-height: 530px){
