@@ -115,9 +115,14 @@ a:hover{
     display:table;
     margin:auto;
     margin-top:1.7rem;
+    
+    padding-left:1rem;
+    padding-right:1rem;
 
     height:2.85rem;
-    width:36.5rem; 
+
+    min-width:100px;
+    max-width:36.5rem; 
     
     border-style:solid;
     border-width:1px;
@@ -189,6 +194,7 @@ input[type=text] {
       position:fixed;
       bottom:0;
 
+      display: flex;
       
 
       height:2.5rem;
@@ -203,17 +209,23 @@ input[type=text] {
       
   }
 
+  .footer-container div {
+    flex-basis: 100%;
+}
+
   .footer-links-left{
       
-      display: block;
-      overflow: auto;
+      display: table;
+      text-align:left;
 
+      /*float:left;*/
 
       margin-left:1.2rem;
       padding-top:.8rem;
 
       height:100%;
 
+      
     
       
       font-family:arial, sans-serif;
@@ -234,9 +246,53 @@ input[type=text] {
     
   }
 
+  .footer-links-right{
+    display: table;
+    text-align: right;
+    padding-top:.8rem;
+
+    height:100%;
+    font-family:arial, sans-serif;
+    font-size:.9rem;
+
+    margin-right:1.2rem;
+
+    align-items:right;
+    justify-content: right;
+  }
+
+  .footer-links-right>*{
+    color:#70757a;
+    font-size:.88rem;
+
+    height:100%;
+
+    margin:auto .7rem auto .7rem;
+    
+    
+  }
+
+  .footer-links-mid{
+    display: table;
+    text-align: center;
+
+    height:100%;
+
+    font-family:arial, sans-serif;
+    font-size:.9rem;
+    
+
+    padding-top:.8rem;
+    
+  }
+
+  .footer-links-mid>*{
+    color:#70757a;
+  }
+
   @media screen and (max-height: 530px){
     
-        #g-logo, #search-bar{
+        #g-logo{
             transition:.3s;
             -webkit-transition:.3s;
             -moz-transition:.3s;
@@ -249,6 +305,10 @@ input[type=text] {
 
         #search-bar{
             margin-top:1rem;
+
+            transition:.1s;
+            -webkit-transition:.1s;
+            -moz-transition:.1s;
         }
 
         .footer-container{
